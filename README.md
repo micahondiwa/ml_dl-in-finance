@@ -1,1 +1,1 @@
-A series of ML projects in finance
+A series of Machine Learning and Deep Learning projects in finance
