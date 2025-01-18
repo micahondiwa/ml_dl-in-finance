@@ -1,0 +1,1 @@
+# Multilayer Perceptron: Timing Factors and Smart-Beta Strategies
