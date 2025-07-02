@@ -15,6 +15,7 @@ class Backtest:
         self.forecast = forecast.values
         self.alpha = alpha 
     
+    # Assigning the appropriate value to the "Hit Variable"
     def hit_series(self):
         return (self.actual < self.forecast) * 1
 
