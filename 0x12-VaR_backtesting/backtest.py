@@ -7,3 +7,10 @@ import seaborn as sns
 from scipy import stats
 
 plt.ioff()
+
+class Backtest:
+    def __init__(self, actual, forecast, alpha):
+        self.index = actual.index
+        self.actual = actual.values
+        self.forecast = forecast.values
+        self.alpha = alpha 
