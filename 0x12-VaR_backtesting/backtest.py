@@ -23,3 +23,6 @@ class Backtest:
     
     def hit_rate(self):
         return self.hit_series().mean()
+
+    def expected_hits(self):
+        return self.actual.size * self.alpha
