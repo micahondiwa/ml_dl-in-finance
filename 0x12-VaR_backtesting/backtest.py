@@ -20,3 +20,6 @@ class Backtest:
 
     def number_of_hits(self):
         return self.hit_series().sum()
+    
+    def hit_rate(self):
+        return self.hit_series().mean()
