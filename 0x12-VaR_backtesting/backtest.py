@@ -26,3 +26,9 @@ class Backtest:
 
     def expected_hits(self):
         return self.actual.size * self.alpha
+    
+    def duration_series(self):
+        hit_series = self.hit_series()
+        hit_series[0] = 1
+        hit_series[-1] = 1
+        return np.diff(np.where(hit_series == 1))[0]
