@@ -41,3 +41,10 @@ class Backtest:
 
         sns.set_context("paper")
         sns.set_style("whitegrid", {"font.family": "serif", "font.serif": "Computer Modern Roaman", "text.usetex": True})
+
+        # Hist
+        ax = r[r<=q].plot(color="red", marker="o", ls="None", figsize=(6, 3.5))
+        for h in r[r <= q].index:
+            plt.axvline(h, color="black", alpha=0.4, linewidth=1, zorder=0)
+
+            
