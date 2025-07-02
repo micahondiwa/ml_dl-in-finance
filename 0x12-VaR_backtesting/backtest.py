@@ -32,3 +32,12 @@ class Backtest:
         hit_series[0] = 1
         hit_series[-1] = 1
         return np.diff(np.where(hit_series == 1))[0]
+    
+    def plot(self, file_name=None):
+
+        #re-add the time series index
+        r = pd.Series(self.actual, index=self.index)
+        q = pd.Series(self.forecast, index=self.index)
+
+        sns.set_context("paper")
+        sns.set_style("whitegrid", {"font.family": "serif", "font.serif": "Computer Modern Roaman", "text.usetex": True})
