@@ -17,3 +17,6 @@ class Backtest:
     
     def hit_series(self):
         return (self.actual < self.forecast) * 1
+
+    def number_of_hits(self):
+        return self.hit_series().sum()
