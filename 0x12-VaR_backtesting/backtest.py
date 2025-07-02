@@ -84,6 +84,7 @@ class Backtest:
         else:
             return loss
 
+    # Violation rate
     def quadratic_loss(self, return_mean=True):
         """Lopez (1999); Martens et al. (2009)"""
         loss = (self.hit_series() * (1 + (self.actual - self.forecast)**2))
