@@ -1,1 +1,2 @@
 # DeepVaR
+Implementing DeepVaR 
