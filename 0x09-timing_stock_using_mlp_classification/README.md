@@ -1,1 +1,3 @@
-# MLP for Classification: Tming AAPL Stock
+# MLP for Classification
+
+- Tming AAPL Stock
